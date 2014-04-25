@@ -1,14 +1,72 @@
+a, a:hover, a:visited, a:focus{
+	text-decoration: none;
+}
+
 body, html{
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
 }
 
+@media (max-width: 600px){
+	
+}
+
 .top_navi{
 	width: 100%;
+	min-width: 100%;
+	max-width: 100%;
 	background: #000;
-	padding: 2px;
+	padding: 6px;
 	font-family: 'Roboto Condensed';
-	font-size: 15pt;
+	font-size: 20pt;
 	color: white;
+	overflow: auto;
+}
+
+.left_navi{
+	width: 25%;
+	float: left;
+	padding: 5px;
+	text-transform: uppercase;
+	letter-spacing: 17px;
+	text-shadow: 1px 1px 2px #EDEDED;
+	transition: all 0.4s linear;
+	text-align: center;
+}
+
+.left_navi:hover{
+	text-shadow: 1px 1px 20px #EDEDED;
+	transition: all 0.4s linear;
+}
+
+.right_navi{
+	width: 60%;
+	float: right;
+	margin-right: 10px;
+}
+
+.right_navi ul li{
+	float: right;
+	display: inline-block;
+}
+
+.right_navi li{
+	width: 120px;
+	background: #fff;
+	margin-top: -20px;
+	margin-right: 45px;
+	letter-spacing: 4px;
+	text-align: center;
+	color: black;
+	text-transform: uppercase;
+	font-size: 18pt;
+	transition: all 0.4s linear;
+}
+
+.right_navi li:hover{
+	background: #000;
+	color: white;
+	text-shadow: 1px 3px 10px white;
+	transition: all 0.4s linear;
 }
