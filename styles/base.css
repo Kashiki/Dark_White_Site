@@ -6,6 +6,7 @@ body, html{
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
+	background: #FAFAFA;
 }
 
 @media (max-width: 600px){
@@ -25,18 +26,18 @@ body, html{
 }
 
 .left_navi{
-	width: 25%;
+	width: 35%;
 	float: left;
 	padding: 5px;
 	text-transform: uppercase;
 	letter-spacing: 17px;
-	text-shadow: 1px 1px 2px #EDEDED;
+	text-shadow: 1px 1px 2px white;
 	transition: all 0.4s linear;
 	text-align: center;
 }
 
 .left_navi:hover{
-	text-shadow: 1px 1px 20px #EDEDED;
+	text-shadow: 1px 1px 10px white;
 	transition: all 0.4s linear;
 }
 
@@ -53,13 +54,14 @@ body, html{
 
 .right_navi li{
 	width: 120px;
-	background: #fff;
+	background: #FAFAFA;
 	margin-top: -20px;
 	margin-right: 45px;
 	letter-spacing: 4px;
 	text-align: center;
 	color: black;
 	text-transform: uppercase;
+	text-shadow: 1px 1px 1px black;
 	font-size: 18pt;
 	transition: all 0.4s linear;
 }
@@ -67,6 +69,42 @@ body, html{
 .right_navi li:hover{
 	background: #000;
 	color: white;
-	text-shadow: 1px 3px 10px white;
+	text-shadow: 1px 2px 2px white;
 	transition: all 0.4s linear;
+}
+
+.content_wrapper{
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 10px; 	
+	padding: 5px;
+}
+
+.media_slider{
+	width: 750px;
+	height: 300px;
+	margin: 0 auto;
+	padding: 5px;
+	text-align: right;
+	background: #121212;
+	font-family: 'Roboto Condensed';
+	color: white;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.media_slider_content{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 50%;
+	font-size: 9pt;
+	font-family: 'Lato';
+	padding: 10px;
+	letter-spacing: 3px;
+}
+
+.media_slider_header{
+	font-size: 20pt;
+	letter-spacing: 3px;
 }
